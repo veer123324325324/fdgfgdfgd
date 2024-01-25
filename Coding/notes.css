@@ -1,0 +1,214 @@
+ body {
+          font-family: "Arial", sans-serif;
+          background-color: #f5f5f5;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          color: #333;
+          line-height: 1.6;
+        }
+        .search-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: relative;
+          padding: 20px;
+        }
+
+        input {
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        #suggestionsContainer {
+          width: 100%;
+          max-width: 300px;
+          background-color: #f9f9f9;
+          border: 1px solid #ddd;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          z-index: 1;
+        }
+
+        .suggestion {
+          padding: 10px;
+          cursor: pointer;
+          color: #333;
+        }
+
+        .suggestion:hover {
+          background-color: #ddd;
+          color: #000;
+        }
+#about, #tutorials, #projects, #contact {
+  width: 200px;
+  padding: 15px;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#about, #tutorials, #projects, #contact {
+  display: inline-block;
+  margin-top: 0;
+}
+
+       header {
+  background-color: #ff6600;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  height: 210px;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+
+  h1 {
+      font-size: 46px;
+      font-family: "Arial Black", sans-serif;
+      color: #00aeff;
+      text-align: center;
+      text-shadow: 2px 2px 4px #666666;
+    }
+
+        .profile-photo {
+          position: absolute;
+          top: 1.5rem;
+          right: 1.5rem;
+          width: 55px;
+          height: 58px;
+          border-radius: 50%;
+          overflow: hidden;
+          
+        }
+
+        .profile-photo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+           margin-right: 20px;
+        }
+
+      nav {
+  background-color: #ff6600; /* Update the background color to #ff6600 */
+  text-align: right;
+  margin-right: 30px;     
+  padding: 15px 0;
+}
+
+
+        nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+         
+        }
+
+        nav li {
+          display: inline;
+          margin: 0 30px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        nav a:hover {
+          text-decoration: underline;
+        }
+
+.corner-links {
+position: absolute;
+top: 20px;
+  display: flex;
+ }
+.corner-links img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Apply border-radius to create a circular shape */
+  overflow: hidden;
+}
+
+        .left-corner,
+.right-corner {
+  background-color: #3498db;
+  padding: 9px 22px; /* Adjust padding to make the buttons smaller */
+  border-radius: 5px;
+  color: #fff;
+  height: 30px;
+  text-decoration: none;
+  margin: 0 10px; /* Adjust margin for spacing */
+  font-size: 16px; /* Reduce the font size for smaller text */
+}
+
+
+        .left-corner:hover,
+        .right-corner:hover {
+          text-decoration: underline;
+        }
+        .left-corner {
+          order: 1;
+        }
+        .right-corner {
+          order: 2;
+        }
+        section {
+          background-color: #fff;
+          border-radius: 15px;
+          padding: 15px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          width: 200px;
+          display: inline-block;
+          vertical-align: top;
+        }
+      section h2 {
+      font-size: 30px;
+        margin-bottom: 10px;
+        }
+   section p {
+    font-size: 25px;
+  color: #333;
+          line-height: 1.3;
+ }
+
+ #HTML {
+  width: 300px;
+  height: 200px;
+  padding: 50px;
+  text-align: center;
+  color:#000;
+}
+
+#HTML a {
+  text-decoration: none;
+    color:#000; 
+}
+
+#CSS{
+width: 300px;
+height: 200px;
+padding: 50px;
+ text-align: center;
+  color:#000 
+}
+#CSS a {
+  text-decoration: none; 
+    color:#000; 
+}
+#JS{
+width: 300px;
+height: 200px;
+padding: 50px;
+ text-align: center;
+  color:#000 
+}
+#JS a {
+  text-decoration: none; 
+    color:#000; 
+}

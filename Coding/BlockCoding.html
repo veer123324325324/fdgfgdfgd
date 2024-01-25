@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Block Coding Platform</title>
+  <style>
+    /* CSS styles for the block coding platform */
+    .block {
+      width: 100px;
+      height: 50px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Block Coding Platform</h1>
+  
+  <div class="block" id="block1"></div>
+  <div class="block" id="block2"></div>
+  <div class="block" id="block3"></div>
+  
+  <script>
+    // JavaScript code for the block coding platform
+    var block1 = document.getElementById("block1");
+    var block2 = document.getElementById("block2");
+    var block3 = document.getElementById("block3");
+    
+    block1.addEventListener("click", function() {
+      console.log("Block 1 clicked");
+    });
+    
+    block2.addEventListener("click", function() {
+      console.log("Block 2 clicked");
+    });
+    
+    block3.addEventListener("click", function() {
+      console.log("Block 3 clicked");
+    });
+    
+    
+const { app, BrowserWindow } = require('electron')
+
+function createWindow () {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
+
+  win.loadFile('index.html')
+}
+
+app.whenReady().then(() => {
+  createWindow()
+
+  app.on('activate', function () {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow()
+  })
+})
+
+app.on('window-all-closed', function () {
+  if (process.platform !== 'darwin') app.quit()
+})
+
+  </script>
+</body>
+</html>

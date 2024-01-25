@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <style>
+    /* CSS styling for the user profile page */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Profile</h1>
+  
+  <table>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Password</th>
+    </tr>
+    <tr>
+      <td id="username"></td>
+      <td id="email"></td>
+      <td id="password"></td>
+    </tr>
+  </table>
+
+  <script>
+    // JavaScript code to retrieve and display user data from the database
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Retrieve user data from the database
+      const userData = getUserData();
+
+      // Display user data on the profile page
+      document.getElementById('username').textContent = userData.username;
+      document.getElementById('email').textContent = userData.email;
+      document.getElementById('password').textContent = userData.password;
+    });
+
+    // Function to retrieve user data from the database (replace with your own implementation)
+    function getUserData() {
+      // Replace this with your own code to fetch user data from the database
+      const userData = {
+        username: 'JohnDoe',
+        email: 'johndoe@example.com',
+        password: '********'
+      };
+
+      return userData;
+    }
+  </script>
+</body>
+</html>

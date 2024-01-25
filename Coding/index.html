@@ -1,0 +1,286 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+
+      <style>
+        body {
+          font-family: "Arial", sans-serif;
+          background-color: #f5f5f5;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          color: #333;
+          line-height: 1.6;
+        }
+        .search-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: relative;
+          padding: 20px;
+        }
+
+        input {
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        #suggestionsContainer {
+          width: 100%;
+          max-width: 300px;
+          background-color: #f9f9f9;
+          border: 1px solid #ddd;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          z-index: 1;
+        }
+
+        .suggestion {
+          padding: 10px;
+          cursor: pointer;
+          color: #333;
+        }
+
+        .suggestion:hover {
+          background-color: #ddd;
+          color: #000;
+        }
+#about, #tutorials, #projects, #contact {
+  width: 200px;
+  padding: 15px;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#about, #tutorials, #projects, #contact {
+  display: inline-block;
+  margin-top: 0;
+}
+
+       header {
+  background-color: #ff6600;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  height: 190px;
+}
+  h1 {
+      font-size: 48px;
+      font-family: "Arial Black", sans-serif;
+      color: #00aeff;
+      text-align: center;
+      text-shadow: 2px 2px 4px #666666;
+    }
+
+        .profile-photo {
+          position: absolute;
+          top: 1.5rem;
+          right: 1.5rem;
+          width: 55px;
+          height: 58px;
+          border-radius: 50%;
+          overflow: hidden;
+          
+        }
+
+        .profile-photo img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+           margin-right: 20px;
+        }
+
+      nav {
+  background-color: #ff6600; /* Update the background color to #ff6600 */
+  text-align: right;
+  margin-right: 30px;     
+  padding: 15px 0;
+}
+
+
+        nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+         
+        }
+
+        nav li {
+          display: inline;
+          margin: 0 30px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        nav a:hover {
+          text-decoration: underline;
+        }
+
+.corner-links {
+position: absolute;
+top: 20px;
+  display: flex;
+ }
+.corner-links img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Apply border-radius to create a circular shape */
+  overflow: hidden;
+}
+
+        .left-corner,
+.right-corner {
+  background-color: #3498db;
+  padding: 9px 22px; /* Adjust padding to make the buttons smaller */
+  border-radius: 5px;
+  color: #fff;
+  height: 30px;
+  text-decoration: none;
+  margin: 0 10px; /* Adjust margin for spacing */
+  font-size: 16px; /* Reduce the font size for smaller text */
+}
+
+
+        .left-corner:hover,
+        .right-corner:hover {
+          text-decoration: underline;
+        }
+        .left-corner {
+          order: 1;
+        }
+        .right-corner {
+          order: 2;
+        }
+        section {
+          background-color: #fff;
+          border-radius: 15px;
+          padding: 15px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          width: 200px;
+          display: inline-block;
+          vertical-align: top;
+        }
+       section h2 {
+      font-size: 30px;
+        margin-bottom: 10px;
+        }
+   section p {
+    font-size: 25px;
+  color: #333;
+          line-height: 1.3;
+ }
+
+ #about {
+width: 300px;
+height: 150px;
+padding: 50px;
+}
+#tutorials{
+width: 300px;
+height: 150px;
+padding: 50px;
+}
+#contact{
+width: 300px;
+height: 150px;
+padding: 50px;
+}
+
+        
+
+        footer {
+          background-color: #3498db;
+          color: #fff;
+          text-align: center;
+          padding: 15px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+      </style>
+      <title>CodePlus</title>
+
+    </head>
+    <body>
+      <header>
+        
+            <nav>
+        <ul>
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="Learn.html">Learn</a></li>
+          <li><a href="Aboutme.html">About</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="notes.html"> Notes</a></li>
+        </ul>
+      </nav>  
+<div class="search-container">
+<input
+type="text"
+id="searchInput"
+placeholder="Search..."
+oninput="showSuggestions()"
+/>
+<div id="suggestionsContainer"></div>
+</div>
+ <script src="script.js"></script>
+<div class="corner-links">
+  <a href="index.html"><img src="https://codeplus.hi.link/logo_3636566b1cf7e63ebb6f518a36ccf0a909c5908bf85d344d9244701fc613c491.png" width="100" height="100"></a>
+  <a class="left-corner" href="login.html">Login</a>
+  <a class="right-corner" href="signup.html">Signup</a>
+</div>
+
+
+        <div class="profile-photo">
+          <a href="Profile.html"
+          ><img src="data:image/png;base64,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" alt="Profile Photo"
+          /></a>
+        </div>
+                                                                                                                                                                                                
+        <h1><font size="8">CodePlus</font></h1>
+      </header>
+
+      
+      <section id="about">
+        <a href="BlockCoding.html"><h2>Block Coding </h2></a>
+        <pre><p>Confused to Start Coding
+          Grade 2-5th
+          </p></pre>
+      </section>
+
+<section id="tutorials">
+<a href="Learn.html"><h2>Web Devloper</h2></a>
+  <p>
+Don't Know what to do after Block Coding
+Grade 6th-8th
+  </p>
+ </section> 
+<section id="contact">
+<a href="Contact.html"><h2>AI</h2></a>
+<p>
+Learned languages Try AI
+9th +
+</p>
+</section>
+  <footer>
+        <p>&copy; 2023 Your Name</p>
+      </footer>
+
+    
+      <script
+        src="//code.tidio.co/htfdaqzkkqdnrys78uuo08xjbbiqiuwh.js"
+        async
+      ></script>
+    </body>
+  </html>

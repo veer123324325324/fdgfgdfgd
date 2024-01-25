@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2ecc71, #3498db);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            height: 350px;
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+        }
+        h2 {
+            color: #2ecc71;
+        }
+        label {
+            display: block;
+            margin: 15px 0 8px 0;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+        .signup-link {
+            margin-top: 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+        .signup-link:hover {
+            color: #2980b9;
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    
+    <form>
+        <h2>Login</h2>
+    
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+      <a href="index.html">
+            <button type="button">Login</button>
+        </a>
+        <a class="signup-link" href="signup.html">Don't have an account? Signup here.</a>
+    </form>
+    <script src="//code.tidio.co/htfdaqzkkqdnrys78uuo08xjbbiqiuwh.js" async></script>
+</body>
+</html>

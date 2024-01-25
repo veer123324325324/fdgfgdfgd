@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Courses</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+        .left-column {
+            width: 20%;
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+        }
+        .left-column h3 {
+            font-size: 20px;
+        }
+        .left-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .left-column ul li {
+            margin-bottom: 10px;
+        }
+        .left-column a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+        .main header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+          
+        .profile-photo {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .main h1 {
+            font-size: 36px;
+        }
+        .main section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .main h2 {
+            font-size: 24px;
+        }
+        .main ul {
+            list-style: none;
+            padding: 0;
+        }
+        .main ul li {
+            margin-bottom: 20px;
+        }
+        .main a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <aside class="left-column">
+            <h3>Topics</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML Basics</a></li>
+                <li><a href="html_resources.html">HTML Resources</a></li>
+                <li><a href="html_book.html">HTML Books</a></li>
+                <li><a href="html_courses.html">HTML Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <header>
+                <h1>HTML Courses</h1>
+                   <div class="profile-photo">
+            <img src="c:\Users\polo\Desktop\download.png" alt="Profile Photo">
+        </div>
+        
+            </header>
+            <section id="course-list">
+                <h2>Explore HTML Courses</h2>
+                <ul>
+                    <li>
+                        <h3>HTML Fundamentals</h3>
+                        <p>An introductory course covering the basics of HTML.</p>
+                        <a href="https://www.example.com/course1" target="_blank">Enroll</a>
+                    </li>
+                    <li>
+                        <h3>Advanced HTML and CSS</h3>
+                        <p>Learn advanced techniques for HTML and CSS.</p>
+                        <a href="https://www.example.com/course2" target="_blank">Enroll</a>
+                    </li>
+                </ul>
+            </section>
+            <footer class="footer">
+                <p>&copy; 2023 Your Name | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+            </footer>
+        </main>
+    </div>
+    <script src="//code.tidio.co/htfdaqzkkqdnrys78uuo08xjbbiqiuwh.js" async></script>
+</body>
+</html>
